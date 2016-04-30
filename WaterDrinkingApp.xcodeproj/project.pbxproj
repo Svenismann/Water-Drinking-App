@@ -15,6 +15,8 @@
 		946AF0511CD1632B008A46AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946AF04F1CD1632B008A46AF /* LaunchScreen.storyboard */; };
 		946AF05C1CD1632B008A46AF /* WaterDrinkingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF05B1CD1632B008A46AF /* WaterDrinkingAppTests.swift */; };
 		946AF0671CD1632B008A46AF /* WaterDrinkingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0661CD1632B008A46AF /* WaterDrinkingAppUITests.swift */; };
+		946AF0751CD18432008A46AF /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0741CD18432008A46AF /* SharingManager.swift */; };
+		94AF21EC1CD3C6E800EBA0C1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		946AF0621CD1632B008A46AF /* WaterDrinkingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterDrinkingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		946AF0661CD1632B008A46AF /* WaterDrinkingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDrinkingAppUITests.swift; sourceTree = "<group>"; };
 		946AF0681CD1632B008A46AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		946AF0741CD18432008A46AF /* SharingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingManager.swift; sourceTree = "<group>"; };
+		94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,9 @@
 			children = (
 				946AF0431CD1632B008A46AF /* AppDelegate.swift */,
 				946AF0451CD1632B008A46AF /* ViewController.swift */,
+				94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */,
 				946AF0471CD1632B008A46AF /* Main.storyboard */,
+				946AF0741CD18432008A46AF /* SharingManager.swift */,
 				946AF04D1CD1632B008A46AF /* Assets.xcassets */,
 				946AF04F1CD1632B008A46AF /* LaunchScreen.storyboard */,
 				946AF0521CD1632B008A46AF /* Info.plist */,
@@ -261,6 +267,8 @@
 			files = (
 				946AF0461CD1632B008A46AF /* ViewController.swift in Sources */,
 				946AF0441CD1632B008A46AF /* AppDelegate.swift in Sources */,
+				946AF0751CD18432008A46AF /* SharingManager.swift in Sources */,
+				94AF21EC1CD3C6E800EBA0C1 /* SettingsViewController.swift in Sources */,
 				946AF04C1CD1632B008A46AF /* WaterDrinkingApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +494,7 @@
 				946AF06D1CD1632B008A46AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		946AF06E1CD1632B008A46AF /* Build configuration list for PBXNativeTarget "WaterDrinkingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				946AF0701CD1632B008A46AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		946AF0711CD1632B008A46AF /* Build configuration list for PBXNativeTarget "WaterDrinkingAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				946AF0731CD1632B008A46AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

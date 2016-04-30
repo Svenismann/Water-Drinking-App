@@ -10,15 +10,43 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    //var glassesToDrink: Int = Int(SharingManager.sharedInstance.numberOfGlassesToDrink)!
+    
+        
+    
+    @IBOutlet weak var remainingGlassesLabel: UILabel!
+    
+    
+    @IBAction func decrementRemainingClasses(sender: UIButton) {
+        
+        //glassesToDrink -= 1
+        //remainingGlassesLabel.text = "\(glassesToDrink)"
+        //print(glassesToDrink)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        _ = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view, typically from a nib.
+       // remainingGlassesLabel.text = "\(glassesToDrink)"
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func update() {
+        //dispatch_async(dispatch_get_main_queue(), {self.remainingGlassesLabel.text = SharingManager.sharedInstance.numberOfGlassesToDrink})
+    }
+    
+    
 
 
 }
