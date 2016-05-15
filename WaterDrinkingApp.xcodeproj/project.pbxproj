@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941E02111CE3EB3A00630E7D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E02101CE3EB3A00630E7D /* SettingsTableViewController.swift */; };
+		941E02131CE3EB5500630E7D /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E02121CE3EB5500630E7D /* SettingsTableViewCell.swift */; };
 		946AF0441CD1632B008A46AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0431CD1632B008A46AF /* AppDelegate.swift */; };
 		946AF0461CD1632B008A46AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0451CD1632B008A46AF /* ViewController.swift */; };
 		946AF0491CD1632B008A46AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946AF0471CD1632B008A46AF /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 		946AF0671CD1632B008A46AF /* WaterDrinkingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0661CD1632B008A46AF /* WaterDrinkingAppUITests.swift */; };
 		946AF0751CD18432008A46AF /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0741CD18432008A46AF /* SharingManager.swift */; };
 		94AF21EC1CD3C6E800EBA0C1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */; };
+		94F8D8551CDDFFF9008BF575 /* WaterCalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8D8541CDDFFF9008BF575 /* WaterCalculationModel.swift */; };
+		94F8D8571CDE25DC008BF575 /* WaterPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8D8561CDE25DC008BF575 /* WaterPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		941E02101CE3EB3A00630E7D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		941E02121CE3EB5500630E7D /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		946AF0401CD1632B008A46AF /* WaterDrinkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterDrinkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		946AF0431CD1632B008A46AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		946AF0451CD1632B008A46AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +59,8 @@
 		946AF0681CD1632B008A46AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		946AF0741CD18432008A46AF /* SharingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingManager.swift; sourceTree = "<group>"; };
 		94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		94F8D8541CDDFFF9008BF575 /* WaterCalculationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterCalculationModel.swift; sourceTree = "<group>"; };
+		94F8D8561CDE25DC008BF575 /* WaterPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				946AF0431CD1632B008A46AF /* AppDelegate.swift */,
-				946AF0451CD1632B008A46AF /* ViewController.swift */,
-				94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */,
 				946AF0471CD1632B008A46AF /* Main.storyboard */,
-				946AF0741CD18432008A46AF /* SharingManager.swift */,
-				946AF04D1CD1632B008A46AF /* Assets.xcassets */,
 				946AF04F1CD1632B008A46AF /* LaunchScreen.storyboard */,
+				94F8D8511CDDFF90008BF575 /* Viewcontrollers */,
+				94F8D8531CDDFFCE008BF575 /* ViewModels */,
+				946AF04D1CD1632B008A46AF /* Assets.xcassets */,
 				946AF0521CD1632B008A46AF /* Info.plist */,
 				946AF04A1CD1632B008A46AF /* WaterDrinkingApp.xcdatamodeld */,
 			);
@@ -132,6 +139,35 @@
 				946AF0681CD1632B008A46AF /* Info.plist */,
 			);
 			path = WaterDrinkingAppUITests;
+			sourceTree = "<group>";
+		};
+		94F8D8511CDDFF90008BF575 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				941E02101CE3EB3A00630E7D /* SettingsTableViewController.swift */,
+				946AF0451CD1632B008A46AF /* ViewController.swift */,
+				94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */,
+				94F8D8521CDDFFAC008BF575 /* Models */,
+			);
+			name = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		94F8D8521CDDFFAC008BF575 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				946AF0741CD18432008A46AF /* SharingManager.swift */,
+				94F8D8541CDDFFF9008BF575 /* WaterCalculationModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		94F8D8531CDDFFCE008BF575 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				941E02121CE3EB5500630E7D /* SettingsTableViewCell.swift */,
+				94F8D8561CDE25DC008BF575 /* WaterPickerView.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94F8D8571CDE25DC008BF575 /* WaterPickerView.swift in Sources */,
 				946AF0461CD1632B008A46AF /* ViewController.swift in Sources */,
+				941E02131CE3EB5500630E7D /* SettingsTableViewCell.swift in Sources */,
 				946AF0441CD1632B008A46AF /* AppDelegate.swift in Sources */,
 				946AF0751CD18432008A46AF /* SharingManager.swift in Sources */,
+				941E02111CE3EB3A00630E7D /* SettingsTableViewController.swift in Sources */,
+				94F8D8551CDDFFF9008BF575 /* WaterCalculationModel.swift in Sources */,
 				94AF21EC1CD3C6E800EBA0C1 /* SettingsViewController.swift in Sources */,
 				946AF04C1CD1632B008A46AF /* WaterDrinkingApp.xcdatamodeld in Sources */,
 			);

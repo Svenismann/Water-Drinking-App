@@ -12,9 +12,17 @@ import Foundation
 class SharingManager {
     static let sharedInstance = SharingManager()
     
-    var waterNeededPerDay = Int()
+    var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     
+    var waterNeededPerDay = String()
     
+    var age = String()
+    var weight = String()
+    var activity = String()
+    
+    var waterLabelText = "Gib deine Werte ein!"
+    
+        
     
     
     

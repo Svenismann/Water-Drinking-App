@@ -28,7 +28,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        isAppAlreadyLaunchedOnce()
+                
         
         _ = NSTimer.scheduledTimerWithTimeInterval(0.4, target: self, selector: #selector(ViewController.update), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view, typically from a nib.
@@ -46,6 +47,18 @@ class ViewController: UIViewController {
         //dispatch_async(dispatch_get_main_queue(), {self.remainingGlassesLabel.text = SharingManager.sharedInstance.numberOfGlassesToDrink})
     }
     
+    func isAppAlreadyLaunchedOnce() -> Bool {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        if let _ = defaults.stringForKey("isAppAlreadyLaunchedOnce"){
+            print("App already launched")
+            return true
+        }else{
+            defaults.setBool(true, forKey: "isAppAlreadyLaunchedOnce")
+            print("App launched first time")
+            return false
+        }
+    }
     
 
 
