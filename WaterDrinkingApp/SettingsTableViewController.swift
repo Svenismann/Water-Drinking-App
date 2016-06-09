@@ -9,6 +9,8 @@
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
+    
+    var userDefaults = NSUserDefaults()
 
     @IBOutlet var settingsTableView: UITableView! = UITableView()
     
@@ -28,27 +30,19 @@ class SettingsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    /*override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         return 3
         
-    }
+    }*/
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    /*override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
-    }
+    }*/
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -93,5 +87,16 @@ class SettingsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func restoreDefaults(sender: UIButton) {
+        
+        userDefaults.removeObjectForKey("userAge")
+        userDefaults.removeObjectForKey("userWeight")
+        userDefaults.removeObjectForKey("userActivity")
+        userDefaults.removeObjectForKey("userNeeds")
+    userDefaults.removeObjectForKey("isAppAlreadyLaunchedOnce")
+        
+        print("Defaults Restored")
+
+    }
 
 }

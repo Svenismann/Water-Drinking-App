@@ -46,12 +46,12 @@
         <!--Settings View Controller-->
         <scene sceneID="Ukm-bp-C6F">
             <objects>
-                <viewController id="StB-As-qFd" customClass="SettingsViewController" customModule="WaterDrinkingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="StB-As-qFd" customClass="SettingsViewController" customModule="WaterDrinkingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KVk-8H-bzf"/>
                         <viewControllerLayoutGuide type="bottom" id="vzj-cU-aMC"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="APs-fQ-XIZ">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="APs-fQ-XIZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -101,10 +101,10 @@
                                     <action selector="resetToDefaults:" destination="StB-As-qFd" eventType="touchUpInside" id="Fq0-RV-ecq"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RPG-dr-N6e">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPG-dr-N6e">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="mXO-eO-sgt">
+                                    <navigationItem id="mXO-eO-sgt">
                                         <barButtonItem key="rightBarButtonItem" title="X" id="yBw-8y-OMm">
                                             <connections>
                                                 <action selector="closeViewController:" destination="StB-As-qFd" id="OqB-7T-xyh"/>
@@ -114,7 +114,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="R7c-ff-aUO"/>
@@ -129,30 +129,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKn-EE-Evx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2498.5" y="1148.5"/>
+            <point key="canvasLocation" x="2224.5" y="1017.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Drinking View Controller-->
+        <scene sceneID="qRY-de-B2k">
+            <objects>
+                <viewController id="h5k-ii-3bu" customClass="DrinkingViewController" customModule="WaterDrinkingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0lW-vU-lJN"/>
+                        <viewControllerLayoutGuide type="bottom" id="pyE-3z-vG4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W7J-GU-8TE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trinkmenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxz-mV-SoE">
+                                <rect key="frame" x="20" y="66" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ml" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="snJ-Tu-4Nd">
+                                <rect key="frame" x="178" y="62" width="162" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBV-AE-18s">
+                                <rect key="frame" x="20" y="153" width="335" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOs-zj-n0f">
+                                <rect key="frame" x="309" y="20" width="46" height="30"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="closeViewController:" destination="h5k-ii-3bu" eventType="touchUpInside" id="MIP-ef-wJM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="drinkingValueLabel" destination="snJ-Tu-4Nd" id="Ago-0J-OlG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkN-kr-pYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224.5" y="1859.5"/>
+        </scene>
+        <!--Settings Table View Controller-->
         <scene sceneID="c8n-Ei-9W1">
             <objects>
-                <tableViewController id="62J-lv-AEe" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="32N-SD-9OQ">
+                <tableViewController id="62J-lv-AEe" customClass="SettingsTableViewController" customModule="WaterDrinkingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="32N-SD-9OQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection headerTitle="1" id="vaa-eq-twg">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BodyDataCell" id="Y4i-Nb-2mB" userLabel="BodyDataCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BodyDataCell" id="Y4i-Nb-2mB" userLabel="BodyDataCell">
                                         <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y4i-Nb-2mB" id="wGT-Im-Qka">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Körperangaben" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo1-ro-Kyh">
                                                     <rect key="frame" x="31" y="11" width="183" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -161,13 +209,24 @@
                                             <segue destination="StB-As-qFd" kind="presentation" id="QC4-vU-Lc2"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yRP-8G-GED">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DrinkingCell" id="yRP-8G-GED" userLabel="DrinkingCell">
                                         <rect key="frame" x="0.0" y="136" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yRP-8G-GED" id="g8O-Us-J4F">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trinkmenge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnE-E0-qBX">
+                                                    <rect key="frame" x="28" y="11" width="160" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="h5k-ii-3bu" kind="presentation" id="AJZ-ON-gu7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -219,6 +278,27 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="4" id="uGX-W7-0oc">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xog-rT-G76">
+                                        <rect key="frame" x="0.0" y="484" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xog-rT-G76" id="DOL-60-ac6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJz-gq-Sd3">
+                                                    <rect key="frame" x="37" y="7" width="300" height="30"/>
+                                                    <state key="normal" title="Restore Defaults"/>
+                                                    <connections>
+                                                        <action selector="restoreDefaults:" destination="62J-lv-AEe" eventType="touchUpInside" id="BKW-uU-Ycq"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="62J-lv-AEe" id="nDl-m7-pwC"/>
@@ -230,7 +310,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKB-mX-MXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336.5" y="1882.5"/>
+            <point key="canvasLocation" x="1686.5" y="1017.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7G0-Bf-vkk">
@@ -244,7 +324,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="NhP-mf-P00" kind="relationship" relationship="viewControllers" id="iyU-Wu-LDv"/>
-                        <segue destination="VZO-dn-jhP" kind="relationship" relationship="viewControllers" id="Tmt-WF-1IG"/>
                         <segue destination="veH-mn-Vy0" kind="relationship" relationship="viewControllers" id="maY-91-JJp"/>
                     </connections>
                 </tabBarController>
@@ -272,25 +351,6 @@
             <point key="canvasLocation" x="1099.5" y="302.5"/>
         </scene>
         <!--Item-->
-        <scene sceneID="wKb-52-0Ji">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VZO-dn-jhP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="JYo-ZY-ipp"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f9B-HU-nnY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="StB-As-qFd" kind="relationship" relationship="rootViewController" id="JUO-sw-BrJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9H5-0T-4T1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1911.5" y="1148.5"/>
-        </scene>
-        <!--Item-->
         <scene sceneID="sIk-R7-OfH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="veH-mn-Vy0" sceneMemberID="viewController">
@@ -308,10 +368,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UC9-Tr-uVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1911.5" y="1882.5"/>
+            <point key="canvasLocation" x="1099.5" y="1017.5"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="QC4-vU-Lc2"/>
-    </inferredMetricsTieBreakers>
 </document>

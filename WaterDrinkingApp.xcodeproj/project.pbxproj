@@ -18,6 +18,7 @@
 		946AF05C1CD1632B008A46AF /* WaterDrinkingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF05B1CD1632B008A46AF /* WaterDrinkingAppTests.swift */; };
 		946AF0671CD1632B008A46AF /* WaterDrinkingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0661CD1632B008A46AF /* WaterDrinkingAppUITests.swift */; };
 		946AF0751CD18432008A46AF /* SharingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946AF0741CD18432008A46AF /* SharingManager.swift */; };
+		946FADA51CE91ABD00015C29 /* DrinkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FADA41CE91ABD00015C29 /* DrinkingViewController.swift */; };
 		94AF21EC1CD3C6E800EBA0C1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */; };
 		94F8D8551CDDFFF9008BF575 /* WaterCalculationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8D8541CDDFFF9008BF575 /* WaterCalculationModel.swift */; };
 		94F8D8571CDE25DC008BF575 /* WaterPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8D8561CDE25DC008BF575 /* WaterPickerView.swift */; };
@@ -58,6 +59,7 @@
 		946AF0661CD1632B008A46AF /* WaterDrinkingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDrinkingAppUITests.swift; sourceTree = "<group>"; };
 		946AF0681CD1632B008A46AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		946AF0741CD18432008A46AF /* SharingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingManager.swift; sourceTree = "<group>"; };
+		946FADA41CE91ABD00015C29 /* DrinkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkingViewController.swift; sourceTree = "<group>"; };
 		94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		94F8D8541CDDFFF9008BF575 /* WaterCalculationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterCalculationModel.swift; sourceTree = "<group>"; };
 		94F8D8561CDE25DC008BF575 /* WaterPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterPickerView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				941E02101CE3EB3A00630E7D /* SettingsTableViewController.swift */,
 				946AF0451CD1632B008A46AF /* ViewController.swift */,
+				946FADA41CE91ABD00015C29 /* DrinkingViewController.swift */,
 				94AF21EB1CD3C6E800EBA0C1 /* SettingsViewController.swift */,
 				94F8D8521CDDFFAC008BF575 /* Models */,
 			);
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946FADA51CE91ABD00015C29 /* DrinkingViewController.swift in Sources */,
 				94F8D8571CDE25DC008BF575 /* WaterPickerView.swift in Sources */,
 				946AF0461CD1632B008A46AF /* ViewController.swift in Sources */,
 				941E02131CE3EB5500630E7D /* SettingsTableViewCell.swift in Sources */,

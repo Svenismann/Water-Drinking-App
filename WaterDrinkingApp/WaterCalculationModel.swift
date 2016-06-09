@@ -13,7 +13,7 @@ class WaterCalculationModel {
     var age:Int? = Int(SharingManager.sharedInstance.age)
     var weight:Int? = Int(SharingManager.sharedInstance.weight)
     var activity = SharingManager.sharedInstance.activity
-    
+    var cupsOfWaterToDrink:Int? = Int(SharingManager.sharedInstance.cupsNeededPerDay)
 
     
     var waterPerKilo: Int {
@@ -48,8 +48,16 @@ class WaterCalculationModel {
         return weight! * waterPerKilo + activityValue
     }
     
+    func calculateCups() -> Int {
+        return calculate() / cupsOfWaterToDrink!
+    }
+    
     var waterNeededValue: String {
         return calculate().description
+    }
+    
+    var cupsNeededValue : String {
+        return calculateCups().description
     }
     
 }

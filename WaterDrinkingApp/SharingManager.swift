@@ -15,6 +15,7 @@ class SharingManager {
     var defaults: NSUserDefaults = NSUserDefaults.standardUserDefaults()
     
     var waterNeededPerDay = String()
+    var cupsNeededPerDay = String()
     
     var age = String()
     var weight = String()
